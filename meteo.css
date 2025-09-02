@@ -1,30 +1,63 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f0f0f0;
+  font-family: 'Poppins', Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
+
+h1 {
+  margin-top: 30px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  background: #ff7e5f;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+button:hover {
+  background: #feb47b;
+  transform: scale(1.05);
+}
+
 #weather-container {
-    margin-top: 20px;
-    padding: 20px;
-    background: white;
-    display: inline-block;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    justify-content: center;
-
+  margin: 40px auto;
+  padding: 25px;
+  width: 300px;
+  background: #ff7e5f;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+  display: none; /* affiché après requête */
 }
 
-h1{
- text-align: center;
- font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+#city {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #444;
 }
 
-img {
-    width: 50px;
+#temperature {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
-button{
-    border: 44%;
-    justify-content: center;
-    border-color: coral;
+#weather-icon {
+  width: 80px;
+  height: 80px;
+  margin: 15px 0;
 }

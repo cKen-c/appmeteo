@@ -47,6 +47,7 @@ document.getElementById("geolocate").addEventListener("click", () => {
                     document.getElementById("temperature").textContent = `Température: ${data.main.temp}°C`;
                     document.getElementById("weather-icon").src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
                     document.getElementById("weather-icon").alt = data.weather[0].description;
+                    document.getElementById("weather-container").style.display = "block";
                 })
                 .catch(err => console.log(err));
         }, error => {
